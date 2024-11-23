@@ -18,11 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
+  background: white
     rgb(var(--background-start-rgb));
 }
 
@@ -30,4 +26,28 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.my {
+  min-width: max-content;
+  inset: -40px -20px auto auto;
+  transform: translate3d(-20.6667px, 60.6667px, 0px);
+}
+.box_shadow {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.245);
+}
+
+.line-indicator li {
+  width: 70px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: rgba(142, 142, 142);
+}
+.line-indicator li:hover {
+  background-color: rgba(168, 167, 167);
+  
+}
+
+.line-indicator li.slick-active {
+  background-color: black;
 }

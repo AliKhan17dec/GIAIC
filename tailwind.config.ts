@@ -8,13 +8,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+       main: "#044e83",
+       sub: "#2eb6e8",
       },
+    },
+    screens: {
+      xs: "500px",
+      sm: "639px",
+      md: "769px",
+      lg: "1025px",
+      "xl-lg": "1080",
+      xl: "1350px",
     },
   },
   plugins: [],
 };
+
 export default config;
